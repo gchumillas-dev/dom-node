@@ -24,7 +24,7 @@ php composer.phar install
 composer install 
 ```
 
-See the composer tutorial for mor info:  
+See the composer tutorial for more info:  
 https://getcomposer.org/doc/01-basic-usage.md
 
 Methods
