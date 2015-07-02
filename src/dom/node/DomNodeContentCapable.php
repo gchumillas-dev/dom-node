@@ -11,6 +11,7 @@
 namespace soloproyectos\dom\node;
 use \DomainException;
 use soloproyectos\dom\Dom;
+use soloproyectos\dom\DomNode;
 use soloproyectos\dom\node\exception\DomNodeException;
 use soloproyectos\text\Text;
 

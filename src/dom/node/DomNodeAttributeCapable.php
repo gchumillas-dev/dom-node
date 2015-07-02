@@ -10,6 +10,7 @@
  */
 namespace soloproyectos\dom\node;
 use soloproyectos\arr\Arr;
+use soloproyectos\dom\DomNode;
 
 /**
  * DomNodeAttributeCapable trait.

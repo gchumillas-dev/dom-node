@@ -11,6 +11,7 @@
 namespace soloproyectos\dom\node;
 use \StdClass;
 use \UnexpectedValueException;
+use soloproyectos\dom\DomNode;
 
 /**
  * DomNodeDataCapable trait.
