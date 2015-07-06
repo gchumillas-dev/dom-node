@@ -8,7 +8,7 @@
  * @license https://raw.github.com/soloproyectos/core/master/LICENSE BSD 2-Clause License
  * @link    https://github.com/soloproyectos/core
  */
-namespace soloproyectos\dom;
+namespace soloproyectos\dom\node;
 use \DOMDocument;
 use \DOMElement;
 use \DOMXPath;

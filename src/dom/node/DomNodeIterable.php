@@ -12,7 +12,7 @@ namespace soloproyectos\dom\node;
 use \ArrayAccess;
 use \Countable;
 use \Iterator;
-use soloproyectos\dom\DomNode;
+use soloproyectos\dom\node\DomNode;
 use soloproyectos\dom\node\exception\DomNodeException;
 
 /**

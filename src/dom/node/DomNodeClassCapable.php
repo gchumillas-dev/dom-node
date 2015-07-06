@@ -9,7 +9,7 @@
  * @link    https://github.com/soloproyectos/core
  */
 namespace soloproyectos\dom\node;
-use soloproyectos\dom\DomNode;
+use soloproyectos\dom\node\DomNode;
 
 /**
  * DomNodeClassCapable trait.
