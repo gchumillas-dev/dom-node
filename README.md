@@ -8,10 +8,9 @@ Installation
 This library uses [composer](https://getcomposer.org/) as dependency manager. Just create a `composer.json` file:
 ```JSON
 {
-    "minimum-stability": "dev",
     "require": {
         "php": ">=5.5.0",
-        "soloproyectos-php/dom-node": "dev-master"
+        "soloproyectos-php/dom-node": "~1.0"
     }
 }
 ```
