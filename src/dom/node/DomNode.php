@@ -251,17 +251,17 @@ class DomNode extends DomNodeIterable
     }
 
     /**
-     * Gets the node name.
+     * Gets or sets the node name.
      *
-     * @return string
+     * @return DomNode|string
      */
-    public function name()
+    public function name($value = null)
     {
-        foreach ($this->elements as $element) {
-            return $element->nodeName;
+        if (func_num_args() > 0) {
+            return $this->_setName($value);
         }
-
-        return "";
+        
+        return $this->_getName();
     }
 
     /**
@@ -371,6 +371,54 @@ class DomNode extends DomNodeIterable
         $node->document = $this->document;
         $node->elements = $elements;
         return $node;
+    }
+    
+    /**
+     * Gets the node name.
+     * 
+     * @return string
+     */
+    private function _getName()
+    {
+        foreach ($this->elements as $element) {
+            return $element->nodeName;
+        }
+
+        return "";
+    }
+    
+    /**
+     * Sets the node name.
+     * 
+     * @param string $value Node name
+     * 
+     * @return DomNode
+     */
+    private function _setName($value)
+    {
+        foreach ($this->elements as $i => $element) {
+            $document = $element->ownerDocument;
+            $parent = $element->parentNode;
+            
+            if ($parent !== null) {
+                $newElement = $document->createElement($value);
+                
+                // clones attributes
+                foreach ($element->attributes as $attr) {
+                    $newElement->appendChild($attr->cloneNode());
+                }
+                
+                // clones childrens
+                foreach ($element->childNodes as $child) {
+                    $newElement->appendChild($child->cloneNode(true));
+                }
+                
+                $this->elements[$i] = $newElement;
+                $parent->replaceChild($newElement, $element);
+            }
+        }
+        
+        return $this;
     }
 
     /**
