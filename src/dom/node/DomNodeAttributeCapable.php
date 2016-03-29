@@ -83,6 +83,22 @@ trait DomNodeAttributeCapable
 
         return false;
     }
+    
+    /**
+     * Removes an attribute.
+     * 
+     * @param string $name Attribute name
+     * 
+     * @return DomNode
+     */
+    public function removeAttr($name)
+    {
+        foreach ($this->elements() as $element) {
+            $element->removeAttribute($name);
+        }
+
+        return $this;
+    }
 
     /**
      * Gets an attribute.
