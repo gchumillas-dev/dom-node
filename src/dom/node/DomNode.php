@@ -413,8 +413,8 @@ class DomNode extends DomNodeIterable
                     $newElement->appendChild($child->cloneNode(true));
                 }
                 
-                $this->elements[$i] = $newElement;
                 $parent->replaceChild($newElement, $element);
+                $this->elements[$i] = $newElement;
             }
         }
         
