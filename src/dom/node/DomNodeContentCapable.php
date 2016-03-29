@@ -131,6 +131,30 @@ trait DomNodeContentCapable
 
         return $this;
     }
+    
+    /**
+     * Replaces the current node.
+     * 
+     * @param string $value HTML fragment
+     * 
+     * @return DomNode
+     */
+    public function replace($value)
+    {
+        foreach ($this->elements() as $element) {
+            $parent = $element->parentNode;
+            if ($parent !== null) {
+                $doc = $element->ownerDocument;
+                $fragment = $doc->createDocumentFragment();
+                if (@$fragment->appendXML($value) === false) {
+                    throw new DomNodeException("Invalid XML fragment");
+                }
+                $parent->replaceChild($fragment, $element);
+            }
+        }
+        
+        return $this;
+    }
 
     /**
      * Decodes HTML entities.
