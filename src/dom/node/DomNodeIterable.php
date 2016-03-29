@@ -5,8 +5,8 @@
  * PHP Version 5.3
  *
  * @author  Gonzalo Chumillas <gonzalo@soloproyectos.com>
- * @license https://raw.github.com/soloproyectos/core/master/LICENSE BSD 2-Clause License
- * @link    https://github.com/soloproyectos/core
+ * @license https://github.com/soloproyectos-php/dom-node/blob/master/LICENSE The MIT License (MIT)
+ * @link    https://github.com/soloproyectos-php/dom-node
  */
 namespace soloproyectos\dom\node;
 use \ArrayAccess;
@@ -20,8 +20,8 @@ use soloproyectos\dom\node\exception\DomNodeException;
  *
  * @package Dom\Node
  * @author  Gonzalo Chumillas <gonzalo@soloproyectos.com>
- * @license https://raw.github.com/soloproyectos/core/master/LICENSE BSD 2-Clause License
- * @link    https://github.com/soloproyectos/core
+ * @license https://github.com/soloproyectos-php/dom-node/blob/master/LICENSE The MIT License (MIT)
+ * @link    https://github.com/soloproyectos-php/dom-node
  */
 class DomNodeIterable implements Iterator, ArrayAccess, Countable
 {
