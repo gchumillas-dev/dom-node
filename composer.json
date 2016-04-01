@@ -11,10 +11,10 @@
     ],
     "require": {
         "php": ">=5.5.0",
-        "soloproyectos-php/dom": "*",
-        "soloproyectos-php/array": "*",
-        "soloproyectos-php/css-parser": "*",
-        "soloproyectos-php/text": "*"
+        "soloproyectos-php/dom": "~2.0",
+        "soloproyectos-php/array": "~1.0",
+        "soloproyectos-php/css-parser": "~1.0",
+        "soloproyectos-php/text": "~1.0"
     },
     "autoload": {
         "psr-4": {
