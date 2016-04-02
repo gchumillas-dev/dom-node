@@ -374,6 +374,20 @@ class DomNode extends DomNodeIterable
     }
     
     /**
+     * Gets the line number of current node.
+     * 
+     * @return integer
+     */
+    public function lineNumber()
+    {
+        foreach ($this->elements as $element) {
+            return $element->getLineNo();
+        }
+
+        return 0;
+    }
+    
+    /**
      * Gets the node name.
      * 
      * @return string
