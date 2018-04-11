@@ -1,7 +1,7 @@
 DomNode
 =======
 
-A library for manipulating and traversing XML documents in an easy and intuitive way. This library was inspired by the [jQuery](https://jquery.com/) library and borrows some interesting ideas, like chaining.
+A library to manipulate and traverse XML documents in an easy and intuitive way. This library was inspired by the [jQuery](https://jquery.com/) library and borrows some interesting ideas.
 
 Installation
 ------------
