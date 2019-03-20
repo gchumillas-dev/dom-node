@@ -1,4 +1,4 @@
-DomNode
+DOMNode
 =======
 
 A library to manage XML documents in an easy and intuitive way.
